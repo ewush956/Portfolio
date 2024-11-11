@@ -13,24 +13,26 @@
 
 </head>
 
-<body class="font-sans text-white">
-    <div class="min-h-screen">
-        <nav class="flex items-center justify-between p-4 bg-black bg-opacity-50">
-            <div class="text-2xl font-bold">Evan Wushke</div>
-            <div>
-                <a href="https://www.linkedin.com" target="_blank"
-                    class="mx-2 text-white hover:text-gray-400">LinkedIn</a>
-                <a href="https://www.github.com" target="_blank" class="mx-2 text-white hover:text-gray-400">GitHub</a>
-            </div>
-        </nav>
-        <div id="shrink" class="transition-all duration-500">
+<main>
 
-            <main>
-                <header class="py-20 text-center">
+    <body class="font-sans text-white">
+        <div class="min-h-screen">
+            <nav class="flex items-center justify-between p-4 min-h-32">
+                <div class="text-2xl font-bold">Evan Wushke</div>
+                <div>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        class="mx-2 text-white hover:text-gray-400">LinkedIn</a>
+                    <a href="https://www.github.com" target="_blank"
+                        class="mx-2 text-white hover:text-gray-400">GitHub</a>
+                </div>
+            </nav>
+            <div id="shrink" class="transition-all duration-500">
+
+                <header class="pb-20 text-center ">
                     <h1 class="text-5xl font-bold">Welcome to My Portfolio!</h1>
                 </header>
 
-                <section class="about-me">
+                <section class="about-me min-h-56">
                     <h2 class="text-4xl font-bold">About <span id="me">Me</span></h2>
                     <p class="max-w-2xl mx-auto text-center">
                         I am a third year Computer Science student at Mount Royal University. I am minoring in
@@ -42,62 +44,101 @@
                     </p>
                 </section>
 
-                <section class="skills">
-                    <h2 class="mb-10 text-4xl font-bold text-center">Skills</h2>
-                    <div class="max-w-2xl mx-auto text-center">
-                        <p>List your technical skills and proficiencies.</p>
+                <section class="skills min-h-56">
+                    <div class="flex items-start gap-6">
+                        <div class="flex flex-wrap">
+                            <div
+                                class="p-4 mb-4 mr-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg max-w-56 hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                                <h3 class="mb-2 text-xl font-bold">C / Assembly</h3>
+                                <p class="mb-4">Experience with low-level C programming, including memory management and
+                                    system calls.</p>
+                            </div>
+                            <div
+                                class="p-4 mb-4 mr-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg max-w-56 hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                                <h3 class="mb-2 text-xl font-bold">Java</h3>
+                                <p class="mb-4">Proficient in Java programming, including object-oriented design and
+                                    development.</p>
+                            </div>
+                            <div
+                                class="p-4 mb-4 mr-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg max-w-56 hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                                <h3 class="mb-2 text-xl font-bold">Python</h3>
+                                <p class="mb-4">Skilled in Python programming for web development, data analysis, and
+                                    scripting.</p>
+                            </div>
+                            <div
+                                class="p-4 mb-4 mr-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg max-w-56 hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                                <h3 class="mb-2 text-xl font-bold">Tailwind CSS</h3>
+                                <p class="mb-4">Experienced in using Tailwind CSS for creating responsive and modern web
+                                    designs.</p>
+                            </div>
+                            <div
+                                class="p-4 mb-4 mr-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg max-w-56 hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                                <h3 class="mb-2 text-xl font-bold">HTML & JavaScript</h3>
+                                <p class="mb-4">Proficient in HTML and JavaScript for building interactive and dynamic
+                                    web applications.</p>
+                            </div>
+                            <div
+                                class="p-4 mb-4 mr-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg max-w-56 hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                                <h3 class="mb-2 text-xl font-bold">Node.js</h3>
+                                <p class="mb-4">Experienced in using Node.js for server-side development and building
+                                    RESTful APIs.</p>
+                            </div>
+                        </div>
+                        <h2 id="skills-heading" class="mr-6 text-4xl font-bold">Skills</h2>
                     </div>
                 </section>
+            </div>
+
+            <section class="projects">
+                <h2 class="mb-10 text-4xl font-bold text-center">School Projects</h2>
+                <div
+                    class="p-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                    <h3 class="mb-2 text-xl font-bold">Project Title</h3>
+                    <p class="mb-4">Brief description of the project. Highlight key features and technologies used.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <div
+                    class="p-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                    <h3 class="mb-2 text-xl font-bold">Project Title</h3>
+                    <p class="mb-4">Brief description of the project. Highlight key features and technologies used.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <div
+                    class="p-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+                    <h3 class="mb-2 text-xl font-bold">Project Title</h3>
+                    <p class="mb-4">Brief description of the project. Highlight key features and technologies used.</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+            </section>
+        </div>
         </div>
 
-        <section class="projects">
-            <h2 class="mb-10 text-4xl font-bold text-center">School Projects</h2>
-            <div
-                class="p-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
-                <h3 class="mb-2 text-xl font-bold">Project Title</h3>
-                <p class="mb-4">Brief description of the project. Highlight key features and technologies used.</p>
-                <a href="#" class="text-blue-400 hover:text-blue-600">View Project</a>
-            </div>
-            <div
-                class="p-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
-                <h3 class="mb-2 text-xl font-bold">Project Title</h3>
-                <p class="mb-4">Brief description of the project. Highlight key features and technologies used.</p>
-                <a href="#" class="text-blue-400 hover:text-blue-600">View Project</a>
-            </div>
-            <div
-                class="p-4 transition duration-500 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
-                <h3 class="mb-2 text-xl font-bold">Project Title</h3>
-                <p class="mb-4">Brief description of the project. Highlight key features and technologies used.</p>
-                <a href="#" class="text-blue-400 hover:text-blue-600">View Project</a>
-            </div>
+        <section class="contact">
+            <h2 class="mb-10 text-4xl font-bold text-center">Contact</h2>
+            <form class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block mb-2 text-sm font-bold">Name</label>
+                    <input type="text" id="name" class="w-full p-2 text-white bg-gray-800 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2 text-sm font-bold">Email</label>
+                    <input type="email" id="email" class="w-full p-2 text-white bg-gray-800 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2 text-sm font-bold">Message</label>
+                    <textarea id="message" class="w-full p-2 text-white bg-gray-800 rounded" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="w-full p-2 bg-teal-500 rounded hover:bg-teal-600">Send</button>
+            </form>
         </section>
-    </div>
+</main>
 
-    <section class="contact">
-        <h2 class="mb-10 text-4xl font-bold text-center">Contact</h2>
-        <form class="max-w-xl mx-auto">
-            <div class="mb-4">
-                <label for="name" class="block mb-2 text-sm font-bold">Name</label>
-                <input type="text" id="name" class="w-full p-2 text-white bg-gray-800 rounded" required>
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block mb-2 text-sm font-bold">Email</label>
-                <input type="email" id="email" class="w-full p-2 text-white bg-gray-800 rounded" required>
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block mb-2 text-sm font-bold">Message</label>
-                <textarea id="message" class="w-full p-2 text-white bg-gray-800 rounded" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="w-full p-2 bg-teal-500 rounded hover:bg-teal-600">Send</button>
-        </form>
-    </section>
-    </main>
-
-    <footer class="py-6 text-center bg-black bg-opacity-50">
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
-    <img id="vertical-image" src="images/picture_with_cat.png" class="hidden transition-all duration-500"
-        alt="Vertical Image">
+<footer class="py-6 text-center bg-black bg-opacity-50">
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+</footer>
+<img id="vertical-image" src="images/picture_with_cat.png" class="hidden transition-all duration-500"
+    alt="Vertical Image">
 </body>
 
 </html>
