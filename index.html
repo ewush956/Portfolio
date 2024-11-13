@@ -10,17 +10,18 @@
     <script src="src/script.js" defer></script>
 </head>
 <body class="font-sans text-white min-h-screen">
-    <nav class="flex items-center justify-between p-4 min-h-32">
+    <div class="top min-h-36">
+    <nav class="flex items-center justify-between p-4 min-h-10">
         <div class="text-2xl font-bold">Evan Wushke</div>
         <div>
             <a href="https://www.linkedin.com" target="_blank" class="mx-2 text-white hover:text-gray-400">LinkedIn</a>
             <a href="https://www.github.com" target="_blank" class="mx-2 text-white hover:text-gray-400">GitHub</a>
         </div>
     </nav>
-    <header class="pb-20 text-center">
+    <header class="mb-10 text-center">
         <h1 class="text-5xl font-bold">Welcome to My Portfolio!</h1>
     </header>
-
+</div>
     <main id="shrink" class="transition-all duration-500 space-y-10">
         
         <!-- About Me Section -->
@@ -33,39 +34,36 @@
             </p>
         </section>
         
-        
-        
-
         <!-- Skills Section -->
-        <section class="skills grid grid-cols-7 gap-4 p-4 bg-black bg-opacity-50 rounded-lg">
-
-            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+        <section class="skills grid grid-cols-7 gap-4 p-4 bg-black bg-opacity-50 rounded-lg h-full" style="grid-auto-rows: 1fr;">
+            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400 flex flex-col">
                 <h3 class="text-xl font-bold">C / Assembly</h3>
-                <p>Experience with low-level C programming, including memory management and system calls.</p>
+                <p class="text-sm flex-grow">Low-level C programming, memory management, and system calls.</p>
             </div>
-            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400 flex flex-col">
                 <h3 class="text-xl font-bold">Java</h3>
-                <p>Proficient in Java programming, including object-oriented design and development.</p>
+                <p class="text-sm flex-grow">Algorithm development using object-oriented design.</p>
             </div>
-            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400 flex flex-col">
                 <h3 class="text-xl font-bold">Python</h3>
-                <p>Skilled in Python programming for web development, data analysis, and scripting.</p>
+                <p class="text-sm flex-grow">Web development, data analysis, and scripting.</p>
             </div>
-            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400 flex flex-col">
                 <h3 class="text-xl font-bold">Tailwind CSS</h3>
-                <p>Experienced in using Tailwind CSS for creating responsive and modern web designs.</p>
+                <p class="text-sm flex-grow">Responsive, modern, and creative web designs.</p>
             </div>
-            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
-                <h3 class="text-xl font-bold">HTML & JavaScript</h3>
-                <p>Proficient in HTML and JavaScript for building interactive and dynamic web applications.</p>
+            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400 flex flex-col">
+                <h3 class="text-xl font-bold">HTML & JS</h3>
+                <p class="text-sm flex-grow">Building interactive and dynamic web applications.</p>
             </div>
-            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400">
+            <div class="p-4 bg-black bg-opacity-50 border border-transparent rounded-lg shadow-lg hover:bg-opacity-75 hover:border-teal-400 hover:shadow-teal-400 flex flex-col">
                 <h3 class="text-xl font-bold">Node.js</h3>
-                <p>Experienced in using Node.js for server-side development and building RESTful APIs.</p>
+                <p class="text-sm flex-grow">Server-side development and building RESTful APIs.</p>
             </div>
+            <!-- Keep the heading at the end -->
             <h2 class="col-span-7 text-4xl font-bold text-center">Skills</h2>
         </section>
-
+        
         <!-- Projects Section -->
         <section class="projects grid grid-cols-4 gap-4 p-4 bg-black bg-opacity-50 rounded-lg">
             <h2 class="col-span-4 text-4xl font-bold text-center">School Projects</h2>
