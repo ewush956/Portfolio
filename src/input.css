@@ -50,14 +50,12 @@ main {
 .about-me p {
     grid-column: 2 / span 3;
 }
-
+.about-me,
 .skills,
 .projects,
 .contact {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .skills {
@@ -116,4 +114,17 @@ main {
     /* Adjust the value as needed for rounding corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Adjust the shadow to blend with the background */
+}
+
+.skill-card {
+    transition: all 0.3s ease;
+}
+
+.skill-card.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+
+.skill-image {
+    width: 100%;
+    height: auto;
 }
