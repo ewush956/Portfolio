@@ -5,9 +5,7 @@
 body {
     background: linear-gradient(135deg, #1a2a6c, #631473, #718da0, #a2b6df);
     background-size: 400% 400%;
-    animation: gradientBG 60s ease infinite;
-    display: flex;
-    flex-direction: column;
+    animation: gradientBG 50s ease infinite;
     min-height: 100vh;
     margin: 0;
 }
@@ -31,13 +29,30 @@ body {
 }
 
 main {
-    flex: 1;
+    
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: 20px;
 }
 
-.about-me,
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.about-me h2 {
+    grid-column: span 1;
+}
+
+.about-me p {
+    grid-column: 2 / span 3;
+}
+
 .skills,
 .projects,
 .contact {
@@ -49,14 +64,13 @@ main {
 
 .about-me,
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(4, 1fr) !important;
     gap: 20px;
 }
 
